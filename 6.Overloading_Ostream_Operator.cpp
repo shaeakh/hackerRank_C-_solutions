@@ -15,13 +15,10 @@ private:
     string first_name_;
     string last_name_;
 };
-
-// Enter your code here.
 ostream& operator<<(ostream& os, const Person& p) {
    os << "first_name=" << p.get_first_name() << ",last_name=" << p.get_last_name();
    return os;
 }
-
 
 
 

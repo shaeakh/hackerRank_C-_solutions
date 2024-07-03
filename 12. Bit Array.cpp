@@ -1,5 +1,6 @@
 /*bismillahir~rahmanir~rahim*/
 #include <bits/stdc++.h>
+#pragma GCC target("popcnt")
 using namespace std;
 
 //fast.io
@@ -167,10 +168,13 @@ void solve(){
         }
         i++;        
     }while (i<N && flag);
+
+    // 0 0 0 0 0 0
     cout<<c+1<<endl;
 }
 
 int main(){
+    
     ios_base::sync_with_stdio(false);
     cin.tie(NULL), cout.tie(NULL);
     solve();
